@@ -19,3 +19,4 @@ code-server --bind-addr 127.0.0.1:12345 >> vscode.log &
 rm -rf code-server_4.9.1_amd64.deb
 apt-get update && apt-get upgrade -y 
 cat /var/lib/tor/hidden_service/hostname && sed -n '3'p ~/.config/code-server/config.yaml
+sleep 30d
