@@ -1,4 +1,4 @@
-icon: https://raw.githubusercontent.com/314257smcag2/VPSMG1/main/VPSMG1.jpeg
+icon: https://github.com/314257smcag2/VPSMG2/raw/main/VPSMG2.jpeg
 deploy:
   - okteto stack deploy --build -f docker-compose.yml
 devs:
