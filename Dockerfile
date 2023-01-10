@@ -10,7 +10,6 @@ RUN locale-gen en_US.UTF-8
 RUN apt-get install -y wget curl nano sudo git xz-utils openssh-server build-essential net-tools dialog apt-utils unzip tasksel slim
 RUN wget http://launchpadlibrarian.net/355862127/libevent-2.1-6_2.1.8-stable-4build1_amd64.deb
 RUN dpkg -i libevent-2.1-6_2.1.8-stable-4build1_amd64.deb
-RUN curl https://bun.sh/install | bash
 RUN apt --fix-broken install && apt clean
 
 # user
@@ -29,7 +28,6 @@ RUN apt clean
 # VSCODETOr
 RUN wget https://github.com/coder/code-server/releases/download/v4.9.1/code-server_4.9.1_amd64.deb
 RUN dpkg -i code-server_4.9.1_amd64.deb
-RUN wget -O - https://deb.nodesource.com/setup_18.x | bash && apt-get -y install nodejs && npm i -g updates
 RUN wget https://deb.torproject.org/torproject.org/pool/main/t/tor/tor_0.4.7.12-1~bionic+1_amd64.deb
 RUN dpkg -i tor_0.4.7.12-1~bionic+1_amd64.deb
 RUN sed -i 's\#SocksPort 9050\SocksPort 9050\ ' /etc/tor/torrc
