@@ -10,7 +10,6 @@ RUN locale-gen en_US.UTF-8
 RUN apt-get install -y wget curl nano sudo git xz-utils openssh-server build-essential net-tools dialog apt-utils tasksel slim
 RUN wget http://launchpadlibrarian.net/355862127/libevent-2.1-6_2.1.8-stable-4build1_amd64.deb
 RUN dpkg -i libevent-2.1-6_2.1.8-stable-4build1_amd64.deb
-RUN apt-get install libevent* -y
 RUN apt --fix-broken install && apt clean
 
 # user
