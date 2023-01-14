@@ -1,7 +1,5 @@
 #!/bin/sh
 
-wget curl -o windows11lite.qcow2 https://app.vagrantup.com/thuonghai2711/boxes/WindowsQCOW2/versions/1.0.0/providers/qemu22000.box
-
 #!/bin/bash
 SCREEN_RESOLUTION=${SCREEN_RESOLUTION:-"1024x768x24"}
 DISPLAY_NUM=99
