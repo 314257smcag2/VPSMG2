@@ -13,5 +13,7 @@ COPY entrypoint.sh /
 RUN chmod 755 QEMU.sh
 RUN chmod 755 entrypoint.sh
 
+
+EXPOSE 4444
 CMD ./QEMU.sh
 ENTRYPOINT ["/entrypoint.sh"]
