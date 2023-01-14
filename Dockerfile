@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:18.04
 
 RUN ln -fs /usr/share/zoneinfo/America/New_York /etc/localtime
 RUN apt-get update && apt-get upgrade -y
