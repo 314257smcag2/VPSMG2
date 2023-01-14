@@ -21,7 +21,7 @@ xvfb-run -l -n $DISPLAY_NUM -s "-ac -screen 0 $SCREEN_RESOLUTION -noreset -liste
     -machine q35 -smp sockets=1,cores=1,threads=2 -m 2048 \
     -usb -device usb-kbd -device usb-tablet -rtc base=localtime \
     -net nic,model=virtio -net user,hostfwd=tcp::4444-:4444 \
-    -drive file=Porteus-CINNAMON.qcow2,media=disk,if=virtio \
+    -drive file=windows11lite.qcow2,media=disk,if=virtio \
     -loadvm windows &
 
 XVFB_PID=$!
